@@ -48,7 +48,7 @@ export default function Page1({ setPageI }: IPage) {
       <TouchableOpacity onPress={() => {
         setPageI(2)
       }}>
-        <Text>Página 2</Text>
+        <Text style={styles.botao}>Página 2</Text>
       </TouchableOpacity>
       <View style={[styles.layout, layoutStyle]}>
         <View style={styles.box} />
@@ -85,5 +85,9 @@ const styles = StyleSheet.create({
   img: {
     width: 50,
     height: 50,
+  },
+  botao: {
+    padding: 10,
+    margin: 1,
   }
 })

@@ -21,7 +21,7 @@ export default function Page2({ setPageI }: IPage) {
     <TouchableOpacity onPress={() => {
         setPageI(1)
     }}>
-        <Text>Página 1</Text>
+        <Text style={styles.botao}>Página 1</Text>
     </TouchableOpacity>
     </>
   )
@@ -30,10 +30,16 @@ export default function Page2({ setPageI }: IPage) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    marginTop: 45,
   },
   row: {
     padding: 15,
-    marginBottom: 10,
+    marginBottom: 5,
     backgroundColor: 'skyblue',
   },
+  botao: {
+    marginLeft: 15,
+    marginBottom: 5,
+  }
+
 })
